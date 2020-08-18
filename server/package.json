@@ -1,0 +1,31 @@
+{
+  "name": "product-card-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon src/index.js"
+  },
+  "author": "ferhatsahin",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource": "^0.7.2",
+    "apollo-server": "^2.16.1",
+    "apollo-server-testing": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "jest": "^26.4.0",
+    "nock": "^13.0.4",
+    "node-fetch": "^2.6.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
