@@ -1,0 +1,7 @@
+{
+  "name": "product-card-client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ferhatsahin",
+  "license": "MIT"
+}
