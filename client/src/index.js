@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   ApolloClient,
-  NormalizedCacheObject,
   ApolloProvider,
-  useQuery,
   gql,
 } from '@apollo/client';
+import App from './App.js'
+import './index.css'
 
 import { cache } from './cache';
+
+/* Apollo Client ayri dosyalara tasima ve gereksiz codelari silme */
 
 export const typeDefs = gql`
   extend type Query {
@@ -20,9 +22,8 @@ const client = new ApolloClient({
   cache,
   uri: 'http://localhost:4000/graphql',
   headers: {
-    authorization: localStorage.getItem('token') || '',
-    'client-name': 'Space Explorer [web]',
-    'client-version': '1.0.0',
+    'client-name': 'Product Card [web]',
+    'client-version': '1.0.0'
   },
   typeDefs,
   resolvers: {},
@@ -31,7 +32,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    Hello Client
+    <App/>
   </ApolloProvider>,
   document.getElementById('root'),
 );
