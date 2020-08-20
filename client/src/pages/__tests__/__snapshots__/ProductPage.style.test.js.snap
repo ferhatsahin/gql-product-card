@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container style test 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width:640px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`HeartIcon default style test 1`] = `
+.c0 {
+  width: 30px;
+  color: gray;
+  padding-right: 10px;
+}
+
+<svg
+  class="c0"
+>
+  heart.svg
+</svg>
+`;
+
+exports[`InfoTab style test 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  font-size: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`PageContainer style test 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 7%;
+  background: slategray;
+}
+
+<div
+  class="c0"
+/>
+`;

@@ -1,6 +1,6 @@
-const products = require('./datasources/products')
+const products = require("./datasources/products");
 module.exports = {
-  Query : {
+  Query: {
     products: () => products
   }
-}
+};

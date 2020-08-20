@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card style test 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #efefef;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`CardHeartIcon style test 1`] = `
+.c0 {
+  width: 30px;
+  color: gray;
+  padding-right: 10px;
+  width: 15px;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  border: none;
+  background: lightgray;
+  border-radius: 50%;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+<svg
+  class="c0"
+>
+  heart.svg
+</svg>
+`;
+
+exports[`CargoIcon style test 1`] = `
+.c0 {
+  width: 14px;
+  color: green;
+  padding-right: 5px;
+}
+
+<svg
+  class="c0"
+>
+  cargo.svg
+</svg>
+`;
+
+exports[`CargoStatus style test 1`] = `
+.c0 {
+  padding: 5px;
+  font-size: 14px;
+}
+
+<p
+  class="c0"
+/>
+`;
+
+exports[`Image style test 1`] = `
+.c0 {
+  height: 200px;
+  margin: 0 auto;
+}
+
+<img
+  class="c0"
+/>
+`;
+
+exports[`Price style test 1`] = `
+.c0 {
+  width: 100%;
+  background: lightgray;
+  padding: 5px;
+  font-weight: bold;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`ProductInfo style test 1`] = `
+.c0 {
+  padding: 2px 16px;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Title style test 1`] = `
+.c0 {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+<p
+  class="c0"
+/>
+`;

@@ -1,27 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  ApolloClient,
-  ApolloProvider,
-  InMemoryCache
-} from '@apollo/client';
+import React from "react";
+import ReactDOM from "react-dom";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
-import App from './App.js';
-import GlobalStyle from './globalStyle'
+import App from "./App.js";
+import GlobalStyle from "./globalStyle";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: 'http://localhost:4000/graphql',
+  uri: "http://localhost:4000/graphql",
   headers: {
-    'client-name': 'Product Card [web]',
-    'client-version': '1.0.0'
+    "client-name": "Product Card [web]",
+    "client-version": "1.0.0"
   }
 });
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <GlobalStyle/>
-    <App/>
+    <GlobalStyle />
+    <App />
   </ApolloProvider>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`NotFoundText renders 1`] = `
+.c0 {
+  padding-left: 10px;
+}
+
+<p
+  class="c0"
+/>
+`;
+
+exports[`PageTitle renders 1`] = `
+.c0 {
+  font-size: 25px;
+  padding-left: 10px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+<p
+  class="c0"
+/>
+`;

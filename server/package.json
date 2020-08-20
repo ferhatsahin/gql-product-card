@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "test": "jest"
   },
   "author": "ferhatsahin",
   "license": "MIT",
@@ -12,7 +12,6 @@
     "apollo-datasource": "^0.7.2",
     "apollo-server": "^2.16.1",
     "apollo-server-testing": "^2.16.1",
-    "dotenv": "^8.2.0",
     "graphql": "^15.3.0",
     "nodemon": "^2.0.4"
   },

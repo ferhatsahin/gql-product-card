@@ -17,8 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "codegen": "apollo client:codegen --watch"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,7 +32,7 @@
     "@testing-library/jest-dom": "^5.11.3",
     "@testing-library/react": "^10.4.8",
     "apollo": "^2.30.2",
-    "artillery": "^1.6.1",
+    "jest-styled-components": "^7.0.3",
     "npm-watch": "^0.7.0"
   }
 }

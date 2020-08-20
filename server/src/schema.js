@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
@@ -19,7 +19,6 @@ const typeDefs = gql`
     FREE_SAME_DAY_SHIPPING
     PAID_SHIPPING
   }
-
 `;
 
 module.exports = typeDefs;
