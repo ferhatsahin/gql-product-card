@@ -2,7 +2,7 @@
 
 **Setup Steps!**
 >FOR SERVER-SİDE
->after running the project you can check the Graphql Playground on localhost:4000
+>-> after running the project you can check the Graphql Playground on localhost:4000
 >```sh
 >-- To run server side of project --
 >$ cd server
@@ -14,7 +14,7 @@
 >```
 
 >FOR CLIENT-SİDE
->after running the project will be server on localhost:3000
+>-> it will served on localhost:3000
 >```sh
 >-- To run server side of project --
 >$ cd client
