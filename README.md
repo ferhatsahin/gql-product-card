@@ -6,7 +6,7 @@
 >```sh
 >-- To run server side of project --
 >$ cd server
->$ yarn add
+>$ yarn install
 >$ yarn start
 >--- For Testing ---
 >$ yarn test
@@ -18,7 +18,7 @@
 >```sh
 >-- To run server side of project --
 >$ cd client
->$ yarn add
+>$ yarn install
 >$ yarn start
 >--- For Testing ---
 >$ yarn test
