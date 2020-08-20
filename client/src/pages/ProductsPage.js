@@ -1,9 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, createContext } from 'react'
+import { useQuery, gql } from '@apollo/client'
+import styled from 'styled-components'
 
 import ProductCardList from '../components/ProductCardList'
-import data from '../data'
 
-import { PageContainer, InfoTab, Container } from './ProductPage.style';
+
+import { PageContainer, InfoTab, Container, HeartIcon } from './ProductPage.style';
+
+const PRODUCTS_QUERY = gql`
+  query {
+    products{
+      id
+      title
+      image
+      price
+      cargoStatus
+    }
+  }
+`;
+
+export const LikeFnContext = createContext();
 
 export default function ProductsPage() {
 
@@ -12,19 +28,31 @@ export default function ProductsPage() {
 
   const onLiked = id => {
     if(!likedIdList.includes(id)){
-      setLikedIdList([...likedIdList,id])
+      setLikedIdList([...likedIdList,id]);
+    }
+    else{
+      setLikedIdList(likedIdList.filter(itemId => itemId !== id));
     }
   }
 
-  const likedDataList = data.filter(item => likedIdList.indexOf(item.id) > -1 )
+  const { data } = useQuery(PRODUCTS_QUERY);
+  if(!data) return null;
+
+  const { products } = data;
+  const likedDataList = products.filter(item => likedIdList.includes(item.id))
 
   return (
     <PageContainer>
       <Container>
-        <InfoTab>{likedIdList.length} Ürün </InfoTab>
+        <InfoTab>
+          <HeartIcon liked/>
+          {likedIdList.length} Ürün 
+        </InfoTab>
         <InfoTab onClick={() => setIsFavorite(!isFavorite)}> Beğendiklerim </InfoTab>
       </Container>
-      <ProductCardList onLiked={onLiked} productData={isFavorite ? likedDataList : data}/>
+      <LikeFnContext.Provider value={onLiked}>
+        <ProductCardList productData={isFavorite ? likedDataList : products}/>
+      </LikeFnContext.Provider>
     </PageContainer>
   )
 }

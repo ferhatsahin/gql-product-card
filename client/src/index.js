@@ -3,35 +3,24 @@ import ReactDOM from 'react-dom';
 import {
   ApolloClient,
   ApolloProvider,
-  gql,
+  InMemoryCache
 } from '@apollo/client';
-import App from './App.js'
-import './index.css'
 
-import { cache } from './cache';
-
-/* Apollo Client ayri dosyalara tasima ve gereksiz codelari silme */
-
-export const typeDefs = gql`
-  extend type Query {
-    products: [Product]
-  }
-`;
+import App from './App.js';
+import GlobalStyle from './globalStyle'
 
 const client = new ApolloClient({
-  cache,
+  cache: new InMemoryCache(),
   uri: 'http://localhost:4000/graphql',
   headers: {
     'client-name': 'Product Card [web]',
     'client-version': '1.0.0'
-  },
-  typeDefs,
-  resolvers: {},
+  }
 });
-
 
 ReactDOM.render(
   <ApolloProvider client={client}>
+    <GlobalStyle/>
     <App/>
   </ApolloProvider>,
   document.getElementById('root'),
