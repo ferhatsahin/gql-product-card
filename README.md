@@ -14,7 +14,7 @@
 >```
 
 >FOR CLIENT-SİDE
->-> it will served on localhost:3000
+>-> it will be served on localhost:3000
 >```sh
 >-- To run server side of project --
 >$ cd client
