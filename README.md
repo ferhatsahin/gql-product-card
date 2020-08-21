@@ -10,7 +10,7 @@
 >$ yarn start
 >--- For Testing ---
 >$ yarn test
->$ yarn test:coverage
+>$ yarn test --coverage
 >```
 
 >FOR CLIENT-SİDE
@@ -22,5 +22,5 @@
 >$ yarn start
 >--- For Testing ---
 >$ yarn test
->$ yarn test --coverage
+>$ yarn test:coverage
 >```
